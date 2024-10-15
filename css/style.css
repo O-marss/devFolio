@@ -1,3 +1,5 @@
+/* ^ Global Style 
+   ~ ----------------------------- */
 *{
   box-sizing: border-box;
 }
@@ -9,11 +11,23 @@ body{
   color: #4e4e4e;
 }
 
-.navbar-mobile {
-  background: rgba(0, 0, 0, 0.9);
-  padding-block: 20px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+  color:#1e1e1e;
 }
 
+
+/* ^ The navbar style 
+   ~ ----------------------------- */
+.navbar-mobile {
+  background: rgba(0, 0, 0, 0.9);
+  padding-block: 12px;
+}
 
 #nav-list{
   height: 100vh;
@@ -38,7 +52,6 @@ body{
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-
 #navbarNavDropdown{
     background-color: #fff;
 }
@@ -53,6 +66,8 @@ body{
   font-weight: 600;
 }
 
+/* ^ Header style 
+   ~ ----------------------------- */
 #header {
   position: relative;
   height: 100vh;
@@ -61,7 +76,6 @@ body{
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-attachment: fixed;
 }
 
 .header-title {
@@ -73,26 +87,106 @@ body{
   color: #fff;
 }
 
-
-
+/* ^ About Section style 
+   ~ ----------------------------- */
 .section{
   padding-top: 4rem;
-  padding-inline: 15px;
+  padding-inline: 0.9375rem;
 }
 
 #about-section .container{
   padding: 4rem 1.25rem;
 }
 
-.about-title{
+.info-title{
   font-weight: 600;
   color: #1e1e1e;
   font-size: 1.1rem;
   margin-bottom: 1rem;
 }
 
-.about-details{
+.info-details{
   font-weight: 600;
   color: #4e4e4e;
   font-size: 1rem;
+}
+
+.skills .progress{
+  height: 0.7rem;
+}
+
+.about-title{
+  position:relative;
+  font-size: 32px;
+  color:#1e1e1e;
+}
+
+.about-title::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -12px;
+  width: 95px;
+  height: 3px;
+  background-color: #0078ff;
+}
+
+/* ^ Services Section style 
+   ~ ----------------------------- */
+
+.section-title{
+    margin-bottom: 4rem;
+}
+
+.section-title h3{
+  text-decoration: none;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.section-title span{
+  position: relative;
+}
+
+.section-title span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  right:0;
+  bottom: -12px;
+  width: 40px;
+  height: 5px;
+  background-color: #0078ff;
+  margin: 0 auto;
+}
+
+.services-details .container{
+  background-color: #fff;
+  padding: 2.5rem 1.3rem;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.service-icon-container{
+  width: 120px;
+  height: 120px;
+  font-size: 2rem;
+  border: 10px solid #0078ff;
+}
+
+.service-icon-container .service-icon{
+  width: 40px;
+  height: 40px;
+  font-size: 40px;
+  color: #1e1e1e;
+  
+}
+
+.services-details .container h2{
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.4rem 0;
 }
