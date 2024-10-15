@@ -34,12 +34,15 @@
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown link
+                  Drop Down
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="#">Drop Down 1</a></li>
+                  <li><a class="dropdown-item" href="#">Drop Down 1</a></li>
+                  <li><a class="dropdown-item" href="#">Drop Down 2</a></li>
+                  <li><a class="dropdown-item" href="#">Drop Down 3</a></li>
+                  <li><a class="dropdown-item" href="#">Drop Down 4</a></li>
+
                 </ul>
               </li>
               <li class="nav-item">
@@ -49,11 +52,37 @@
           </div>
         </div>
       </nav>
+
       <div id="header" class="container-fluid d-flex flex-column align-items-center justify-content-center" >
         <h1 class="header-title text-white text-center mb-4">I am Morgan Freeman</h1>
-        <p class="h3 text-white">Photographer</p>
+        <h1><span class="text-white auto-type"></span></h1>
+
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script>
+          var typed = new Typed(".auto-type", {
+            strings: ['Photographer','Designer', 'Developer', 'Freelancer'],
+            typeSpeed: 100,
+            backSpeed: 50,
+            loop: true
+          })
+        </script>
       </div>
-      <div class="test" style="height: 100vh;"></div>
+
+      <div id="about-section" class="section">
+        <div class="container bg-white shadow">
+          <div class="about-img mb-4">
+          <img src="images/testimonial-2.jpg" alt="" class="rounded-3 ms-2">
+         </div>
+         <div class="about-info d-flex flex-column">
+          <span class="about-title">Name: <span class="about-details fw-normal">Morgan Freeman</span></span>
+          <span class="about-title">Profile <span class="about-details fw-normal">full stack developer</span></span>
+          <span class="about-title">Email: <span class="about-details fw-normal">contact@example.com</span></span>
+          <span class="about-title">Phone: <span class="about-details fw-normal">(617) 557-0089</span></span>
+          <span class="about-title">Skill <span class="about-details fw-normal"></span></span>
+
+        </div>
+        </div>
+      </div>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
