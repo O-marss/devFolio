@@ -161,7 +161,7 @@ h6
   margin: 0 auto;
 }
 
-.services-details .container{
+.services-details .service-box{
   background-color: #fff;
   padding: 2.5rem 1.3rem;
   border-radius: 1rem;
@@ -169,24 +169,35 @@ h6
   text-align: center;
 }
 
+
+
 .service-icon-container{
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   font-size: 2rem;
-  border: 10px solid #0078ff;
+  box-shadow: 0 0 0 10px #0078ff;
+  color: #1e1e1e;
 }
 
 .service-icon-container .service-icon{
   width: 40px;
   height: 40px;
   font-size: 40px;
-  color: #1e1e1e;
+  color: inherit;
   
 }
 
-.services-details .container h2{
+.services-details .service-box h2{
   font-size: 1.4rem;
   text-transform: uppercase;
   text-align: center;
   padding: 0.4rem 0;
+}
+
+.services-details .service-box:hover .service-icon-container{
+  transition: all 500ms ease;
+  color: #fff;
+  background-color: #0078ff;
+  box-shadow: 0 0 0 10px #cde1f8;
+  border: none ;
 }
