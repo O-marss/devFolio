@@ -20,6 +20,69 @@ h6 {
   color: #1e1e1e;
 }
 
+.section{
+  position: relative;
+  background-image: url(../images/overlay-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  padding: 8rem 0;
+}
+
+.section:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #0078ff;
+  opacity: 0.7;
+}
+
+.side-title {
+  position: relative;
+  font-size: 32px;
+  font-weight: 500;
+  color: #1e1e1e;
+}
+
+.side-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -12px;
+  width: 95px;
+  height: 3px;
+  background-color: #0078ff;
+}
+
+.section-title {
+  margin-bottom: 4rem;
+}
+
+.section-title h3 {
+  text-decoration: none;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.section-title span {
+  position: relative;
+}
+
+.section-title span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -22px;
+  width: 40px;
+  height: 5px;
+  background-color: #0078ff;
+  margin: 0 auto;
+}
+
 /* ^ The navbar style 
    ~ ----------------------------- */
 .navbar-mobile {
@@ -113,52 +176,9 @@ h6 {
   height: 0.7rem;
 }
 
-.about-title {
-  position: relative;
-  font-size: 32px;
-  color: #1e1e1e;
-}
-
-.about-title::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -12px;
-  width: 95px;
-  height: 3px;
-  background-color: #0078ff;
-}
 
 /* ^ Services Section style 
    ~ ----------------------------- */
-
-.section-title {
-  margin-bottom: 4rem;
-}
-
-.section-title h3 {
-  text-decoration: none;
-  font-size: 3rem;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.section-title span {
-  position: relative;
-}
-
-.section-title span::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -22px;
-  width: 40px;
-  height: 5px;
-  background-color: #0078ff;
-  margin: 0 auto;
-}
-
 #services {
   overflow: hidden;
 }
@@ -194,7 +214,7 @@ h6 {
 }
 
 .services-details .service-box:hover .service-icon-container {
-  transition: all 500ms ease;
+  transition: all 0.5s ease;
   color: #fff;
   background-color: #0078ff;
   box-shadow: 0 0 0 10px #cde1f8;
@@ -204,25 +224,8 @@ h6 {
 /* ^ Statistics Section style 
    ~ ----------------------------- */
 #statistics {
-  position: relative;
-  background-image: url(../images/counters-bg.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: scroll;
   padding: 8rem 0;
   color: #fff;
-}
-
-#statistics::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #0078ff;
-  opacity: 0.7;
 }
 
 #statistics .row {
@@ -323,6 +326,8 @@ h6 {
   opacity: 0.7;
 }
 
+
+
 #feedback .container {
   position: relative;
   z-index: 99;
@@ -354,7 +359,7 @@ h6 {
 /* ^ Blog Section style 
    ~ ----------------------------- */
 #blog {
-  padding-top: 4rem;
+  padding-block: 4rem;
 }
 
 #blog .card-title a {
@@ -373,7 +378,7 @@ h6 {
 #blog .card-footer img {
   width: 32px;
   height: 32px;
-  margin-right: 4px;
+  margin-right: 0.25rem;
   overflow: hidden;
 }
 
@@ -398,7 +403,7 @@ h6 {
   align-items: center;
   background-color: #0078ff;
   color: #fff;
-  padding: 5px 15px;
+  padding: 0.3125rem 0.9375rem;
   overflow: hidden;
   border-radius: 4px;
   text-transform: uppercase;
@@ -415,4 +420,45 @@ h6 {
 .blog-img-2::after,
 .blog-img-3::after {
   content: "Web Design";
+}
+
+#contact .row{
+  padding: 48px 20px;
+}
+
+#contact .form input{
+  font-size: 14px;
+color: #4e4e4e;
+}
+
+.submit{
+  text-align: center;
+}
+
+#contact .form .submit input{
+  background: #0078ff;
+  border: 0;
+  padding: 10px 24px;
+  font-size: 1.2rem;
+  color: #fff;
+  transition: 0.4s;
+}
+
+#contact .form .submit input:hover{
+  transition: all 0.5s ease;
+  color: #fff;
+  background-color: #3393ff;
+  box-shadow: 0 0 0 5px #cde1f8;
+  border: none;
+}
+
+.intouch-icon{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-block: 5px;
+}
+
+.intouch-icon i {
+  color: #0078ff;
 }
