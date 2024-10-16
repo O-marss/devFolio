@@ -33,6 +33,10 @@
     .m-20{
         width: 20%;
     }
+
+    #feedback .description{
+        padding: 0 8rem
+    }
 }
 
 @media (min-width: 992px){
@@ -88,6 +92,14 @@
 
     #statistics {
         background-attachment: fixed;
+    }
+
+    #feedback {
+        background-attachment: fixed;
+    }
+
+    #feedback .description{
+        padding: 0 13rem
     }
 }
 
