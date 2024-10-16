@@ -1,10 +1,10 @@
 /* ^ Global Style 
    ~ ----------------------------- */
-*{
+* {
   box-sizing: border-box;
 }
 
-body{
+body {
   margin: 0;
   padding: 0;
   background-color: #f5f5f5;
@@ -16,11 +16,9 @@ h2,
 h3,
 h4,
 h5,
-h6
-{
-  color:#1e1e1e;
+h6 {
+  color: #1e1e1e;
 }
-
 
 /* ^ The navbar style 
    ~ ----------------------------- */
@@ -29,7 +27,7 @@ h6
   padding-block: 12px;
 }
 
-#nav-list{
+#nav-list {
   height: 100vh;
 }
 
@@ -45,15 +43,15 @@ h6
   padding-block: 0;
 }
 
-.custom-toggler:focus{
-    box-shadow: none;
+.custom-toggler:focus {
+  box-shadow: none;
 }
 .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-#navbarNavDropdown{
-    background-color: #fff;
+#navbarNavDropdown {
+  background-color: #fff;
 }
 
 #nav-list .nav-item .nav-link {
@@ -83,45 +81,45 @@ h6
   font-weight: 600;
 }
 
-.typed-cursor{
+.typed-cursor {
   color: #fff;
 }
 
 /* ^ About Section style 
    ~ ----------------------------- */
-.section{
+.section {
   padding-top: 4rem;
   padding-inline: 0.9375rem;
 }
 
-#about-section .container{
+#about-section .container {
   padding: 4rem 1.25rem;
 }
 
-.info-title{
+.info-title {
   font-weight: 600;
   color: #1e1e1e;
   font-size: 1.1rem;
   margin-bottom: 1rem;
 }
 
-.info-details{
+.info-details {
   font-weight: 600;
   color: #4e4e4e;
   font-size: 1rem;
 }
 
-.skills .progress{
+.skills .progress {
   height: 0.7rem;
 }
 
-.about-title{
-  position:relative;
+.about-title {
+  position: relative;
   font-size: 32px;
-  color:#1e1e1e;
+  color: #1e1e1e;
 }
 
-.about-title::after{
+.about-title::after {
   content: "";
   position: absolute;
   left: 0;
@@ -134,26 +132,26 @@ h6
 /* ^ Services Section style 
    ~ ----------------------------- */
 
-.section-title{
-    margin-bottom: 4rem;
+.section-title {
+  margin-bottom: 4rem;
 }
 
-.section-title h3{
+.section-title h3 {
   text-decoration: none;
   font-size: 3rem;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-.section-title span{
+.section-title span {
   position: relative;
 }
 
-.section-title span::after{
+.section-title span::after {
   content: "";
   position: absolute;
   left: 0;
-  right:0;
+  right: 0;
   bottom: -22px;
   width: 40px;
   height: 5px;
@@ -161,12 +159,11 @@ h6
   margin: 0 auto;
 }
 
-#services{
+#services {
   overflow: hidden;
-
 }
 
-.services-details .service-box{
+.services-details .service-box {
   background-color: #fff;
   padding: 2.5rem 1.3rem;
   border-radius: 1rem;
@@ -174,7 +171,7 @@ h6
   text-align: center;
 }
 
-.service-icon-container{
+.service-icon-container {
   width: 100px;
   height: 100px;
   font-size: 2rem;
@@ -182,32 +179,31 @@ h6
   color: #1e1e1e;
 }
 
-.service-icon-container .service-icon{
+.service-icon-container .service-icon {
   width: 40px;
   height: 40px;
   font-size: 40px;
   color: inherit;
-  
 }
 
-.services-details .service-box h2{
+.services-details .service-box h2 {
   font-size: 1.4rem;
   text-transform: uppercase;
   text-align: center;
   padding: 0.4rem 0;
 }
 
-.services-details .service-box:hover .service-icon-container{
+.services-details .service-box:hover .service-icon-container {
   transition: all 500ms ease;
   color: #fff;
   background-color: #0078ff;
   box-shadow: 0 0 0 10px #cde1f8;
-  border: none ;
+  border: none;
 }
 
 /* ^ Statistics Section style 
    ~ ----------------------------- */
-#statistics{
+#statistics {
   position: relative;
   background-image: url(../images/counters-bg.jpg);
   background-position: center center;
@@ -218,7 +214,7 @@ h6
   color: #fff;
 }
 
-#statistics::after{
+#statistics::after {
   content: "";
   position: absolute;
   top: 0;
@@ -229,17 +225,17 @@ h6
   opacity: 0.7;
 }
 
-#statistics .row{
+#statistics .row {
   position: relative;
   z-index: 99;
 }
 
-#statistics h6{
+#statistics h6 {
   color: #fff;
   font-weight: normal;
 }
 
-.circle-icon{
+.circle-icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -251,7 +247,7 @@ h6
   margin-inline: auto;
 }
 
-.statstic-num{
+.statstic-num {
   font-size: 2rem;
   color: #fff;
   margin-bottom: 0;
@@ -259,19 +255,19 @@ h6
 
 /* ^ Portfolio Section style 
    ~ ----------------------------- */
-#portfolio{
+#portfolio {
   padding-block: 4rem 3rem;
 }
 
-#portfolio .portfolio-container .card-body{
+#portfolio .portfolio-container .card-body {
   padding: 2rem 0.875rem 1rem 1.1875rem;
 }
 
-.card-body h5{
+.card-body h5 {
   color: #1e1e1e;
   font-size: 1.2rem;
 }
-.card-text{
+.card-text {
   color: #0078ff;
   font-size: 0.8rem;
   font-weight: 400;
@@ -288,26 +284,27 @@ h6
   overflow: hidden;
 }
 
-.card a{
+.card a {
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
 
-.card-img{
+.card-img {
   overflow: hidden;
   cursor: pointer;
 }
 
-.card-img img{
+.card-img img {
   transition: all 1s;
 }
 
-.card:hover .card-img img{
+.card:hover .card-img img {
   transform: scale(1.3);
 }
 
-
-#feedback{
+/* ^ Feedback Section style 
+   ~ ----------------------------- */
+#feedback {
   position: relative;
   background-image: url(../images/overlay-bg.jpg);
   background-position: center center;
@@ -315,7 +312,7 @@ h6
   padding: 8rem 0;
 }
 
-#feedback:after{
+#feedback:after {
   content: "";
   position: absolute;
   top: 0;
@@ -326,27 +323,26 @@ h6
   opacity: 0.7;
 }
 
-#feedback .container{
+#feedback .container {
   position: relative;
   z-index: 99;
 }
 
-#feedback .carousel-indicators{
+#feedback .carousel-indicators {
   bottom: -50px;
 }
 
-#feedback .carousel-indicators button{
+#feedback .carousel-indicators button {
   width: 12px;
   height: 12px;
   border-radius: 50%;
 }
 
-#feedback .carousel-inner .carousel-item{
-  transition: transform .4s ease-in-out;
+#feedback .carousel-inner .carousel-item {
+  transition: transform 0.4s ease-in-out;
 }
 
-
-.carousel h5{
+.carousel h5 {
   color: #fff;
   text-transform: uppercase;
   font-weight: 600;
@@ -355,7 +351,68 @@ h6
   font-size: 1.4rem;
 }
 
-
-#blog{
+/* ^ Blog Section style 
+   ~ ----------------------------- */
+#blog {
   padding-top: 4rem;
+}
+
+#blog .card-title a {
+  font-size: 1.3rem;
+  color: #1e1e1e;
+  margin-top: 0.6rem;
+}
+
+#blog .card-text {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #4e4e4e;
+  margin-bottom: 1rem;
+}
+
+#blog .card-footer img {
+  width: 32px;
+  height: 32px;
+  margin-right: 4px;
+  overflow: hidden;
+}
+
+#blog .bloger-name a {
+  color: #4e4e4e;
+  font-size: 1rem;
+}
+
+.blog-img {
+  position: relative;
+  text-align: center;
+}
+
+.blog-img:after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -15px;
+  width: fit-content;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  background-color: #0078ff;
+  color: #fff;
+  padding: 5px 15px;
+  overflow: hidden;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  margin-inline: auto;
+}
+
+.blog-img-1::after {
+  content: "Travel";
+}
+
+.blog-img-2::after,
+.blog-img-3::after {
+  content: "Web Design";
 }
