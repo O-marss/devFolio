@@ -256,3 +256,52 @@ h6
   color: #fff;
   margin-bottom: 0;
 }
+
+/* ^ Portfolio Section style 
+   ~ ----------------------------- */
+#portfolio{
+  padding-top: 4rem;
+}
+
+#portfolio .portfolio-container .card-body{
+  padding: 2rem 0.875rem 1rem 1.1875rem;
+}
+
+.card-body h5{
+  color: #1e1e1e;
+  font-size: 1.2rem;
+}
+.card-text{
+  color: #0078ff;
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.card-text span {
+  color: #4e4e4e;
+}
+
+.add-icon a {
+  font-size: 2.5rem;
+  color: #0078ff;
+  overflow: hidden;
+}
+
+.card a{
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.card-img{
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card-img img{
+  transition: all 1s;
+}
+
+.card:hover .card-img img{
+  transform: scale(1.3);
+}
