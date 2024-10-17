@@ -37,6 +37,10 @@
     #feedback .description{
         padding: 0 8rem
     }
+
+    #contact .row{
+        padding: 3rem;
+    }
 }
 
 @media (min-width: 992px){
@@ -70,22 +74,6 @@
 }
 
 @media (min-width: 1200px){
-    .xl-100{
-        width: 100%;
-    }
-    .xl-50{
-        width: 50%;
-    }
-    .xl-33{
-        width: 33.33333333334%;
-    }
-    .xl-25{
-        width: 25%;
-    }
-    .xl-20{
-        width: 20%;
-    }
-
     #header{
         background-attachment: fixed;
     }
@@ -101,22 +89,10 @@
     #feedback .description{
         padding: 0 13rem
     }
+
+    #contact {
+        background-attachment: fixed;
+    }
+
 }
 
-@media (min-width: 1400px){
-    .xxl-100{
-        width: 100%;
-    }
-    .xxl-50{
-        width: 50%;
-    }
-    .xxl-33{
-        width: 33.33333333334%;
-    }
-    .xxl-25{
-        width: 25%;
-    }
-    .xxl-20{
-        width: 20%;
-    }
-}

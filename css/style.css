@@ -20,7 +20,14 @@ h6 {
   color: #1e1e1e;
 }
 
-.section{
+a,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+.section {
   position: relative;
   background-image: url(../images/overlay-bg.jpg);
   background-position: center center;
@@ -176,7 +183,6 @@ h6 {
   height: 0.7rem;
 }
 
-
 /* ^ Services Section style 
    ~ ----------------------------- */
 #services {
@@ -224,6 +230,7 @@ h6 {
 /* ^ Statistics Section style 
    ~ ----------------------------- */
 #statistics {
+  background-image: url(../images/counters-bg.jpg);
   padding: 8rem 0;
   color: #fff;
 }
@@ -260,6 +267,7 @@ h6 {
    ~ ----------------------------- */
 #portfolio {
   padding-block: 4rem 3rem;
+  overflow: hidden;
 }
 
 #portfolio .portfolio-container .card-body {
@@ -325,8 +333,6 @@ h6 {
   background-color: #0078ff;
   opacity: 0.7;
 }
-
-
 
 #feedback .container {
   position: relative;
@@ -422,20 +428,35 @@ h6 {
   content: "Web Design";
 }
 
-#contact .row{
-  padding: 48px 20px;
+#blog .card-title a {
+  transition: all 0.6s;
 }
 
-#contact .form input{
+#blog .card-title a:hover {
+  color: #0078ff;
+}
+
+/* ^ Contact Section style 
+   ~ ----------------------------- */
+#contact {
+  padding-top: 8rem;
+  box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+}
+
+#contact .row {
+  padding: 3rem 0.4rem;
+}
+
+#contact .form input {
   font-size: 14px;
-color: #4e4e4e;
+  color: #4e4e4e;
 }
 
-.submit{
+.submit {
   text-align: center;
 }
 
-#contact .form .submit input{
+#contact .form .submit input {
   background: #0078ff;
   border: 0;
   padding: 10px 24px;
@@ -444,7 +465,7 @@ color: #4e4e4e;
   transition: 0.4s;
 }
 
-#contact .form .submit input:hover{
+#contact .form .submit input:hover {
   transition: all 0.5s ease;
   color: #fff;
   background-color: #3393ff;
@@ -452,7 +473,7 @@ color: #4e4e4e;
   border: none;
 }
 
-.intouch-icon{
+.intouch-icon {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -461,4 +482,45 @@ color: #4e4e4e;
 
 .intouch-icon i {
   color: #0078ff;
+}
+
+.social-icons > div {
+  height: 40px;
+  width: 40px;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  line-height: 1.6;
+  margin: 0 15px 0 0;
+  box-shadow: 0 0 0 3px #0078ff;
+  transition: all 500ms ease;
+  color: #000;
+}
+
+.social-icons a {
+  color: inherit;
+}
+
+.social-icons > div:hover {
+  background-color: #0078ff;
+  color: #fff;
+  box-shadow: 0 0 0 3px #cde1f8;
+  transition: all 500ms ease;
+}
+
+/* ^ Footer Section style 
+   ~ ----------------------------- */
+#footer {
+  color: #fff;
+  padding: 1rem 0;
+  background: #0062d3;
+}
+
+#footer .sign {
+  color: #000;
+  font-family: "Sarina", "cursive";
+  transition: all 1s;
+}
+
+.sign:hover {
+  text-decoration: underline;
 }
