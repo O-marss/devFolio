@@ -29,6 +29,51 @@
     color: #fff;
   }
 
+  .nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0 !important;
+    white-space: nowrap;
+    transition: 0.3s;
+    letter-spacing: 0.4px;
+    position: relative;
+    text-transform: uppercase;
+  }
+  
+  .nav-link::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+
+  
+.nav-link:hover:before {
+    visibility: visible;
+    width: 80%;
+    transition: all 0.5s ease-in-out;
+  }
+
+  body:has(#header:target) .nav-link[href="#header"]::before,
+  body:has(#about:target) .nav-link[href="#about"]::before,
+  body:has(#services:target) .nav-link[href="#services"]::before,
+  body:has(#statistics:target) .nav-link[href="#statistics"]::before,
+  body:has(#blog:target) .nav-link[href="#blog"]::before,
+  body:has(#contact:target) .nav-link[href="#contact"]::before {
+    width: 100%;
+    visibility: visible;
+  }
+
   #about .about-container {
     padding: 4rem 3rem;
   }
