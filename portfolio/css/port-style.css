@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #4e4e4e;
+}
+
+a {
+  text-decoration: none;
+}
+
+#portfolio-home {
+  height: 350px;
+}
+
+#portfolio-home {
+  position: relative;
+  background-image: url(../../images/overlay-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 8rem 0;
+}
+
+#portfolio-home:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #0078ff;
+  opacity: 0.7;
+}
+
+#portfolio-home .container {
+  position: relative;
+  z-index: 99;
+}
+
+#portfolio-home h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+#portfolio-home p {
+  color: #cde1f8;
+}
+
+#carouselExampleIndicators .carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #0078ff;
+  border-radius: 50%;
+}
+
+#carouselExampleIndicators .carousel-indicators button.active {
+  background-color: #0078ff;
+}
+
+.portfolio-text h2 {
+  color: #000;
+}
+.portfolio-text h3 {
+  color: #4e4e4e;
+}
+
+/* ^ Footer Section style 
+   ~ ----------------------------- */
+#footer {
+  color: #fff;
+  padding: 1rem 0;
+  background: #0062d3;
+}
+
+#footer .sign {
+  color: #000;
+  font-family: "Sarina", "cursive";
+  transition: all 1s;
+}
+
+.sign:hover {
+  text-decoration: underline;
+}
