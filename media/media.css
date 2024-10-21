@@ -1,5 +1,5 @@
 @media (min-width: 768px) {
-  .header-title {
+  .home-title {
     font-size: 4.5rem;
   }
 
@@ -25,15 +25,15 @@
     height: auto;
   }
 
-  #navbarNavDropdown #nav-list .nav-link {
+  #nav-list .nav-link {
+    color: #fff;
+  }
+
+  #nav-list .nav-link:hover{
     color: #fff;
   }
 
   .nav-link {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: #fff;
     font-size: 16px;
     font-weight: 600;
     padding: 0 !important;
@@ -57,21 +57,24 @@
     transition: all 0.3s ease-in-out;
   }
 
-  
-.nav-link:hover:before {
+  .nav-link:hover:before {
     visibility: visible;
     width: 80%;
     transition: all 0.5s ease-in-out;
   }
 
-  body:has(#header:target) .nav-link[href="#header"]::before,
-  body:has(#about:target) .nav-link[href="#about"]::before,
-  body:has(#services:target) .nav-link[href="#services"]::before,
-  body:has(#statistics:target) .nav-link[href="#statistics"]::before,
-  body:has(#blog:target) .nav-link[href="#blog"]::before,
-  body:has(#contact:target) .nav-link[href="#contact"]::before {
-    width: 100%;
+  #nav-list .nav-link:hover{
+    color: #fff;
+  }
+  
+  #nav-list .nav-link.active{
+    color: #fff;
+  }
+
+  .nav-link.active::before{
     visibility: visible;
+    width: 80%;
+    transition: all 0.3s ease-in-out;
   }
 
   #about .about-container {
@@ -80,7 +83,7 @@
 }
 
 @media (min-width: 1200px) {
-  #header {
+  #home {
     background-attachment: fixed;
   }
 

@@ -92,7 +92,7 @@ a:visited {
 
 /* ^ The navbar style 
    ~ ----------------------------- */
-.navbar-mobile {
+.navbar {
   background: rgba(0, 0, 0, 0.9);
   padding-block: 12px;
 }
@@ -128,22 +128,18 @@ a:visited {
   padding: 10px 20px;
 }
 
-#navbarNavDropdown #nav-list .nav-link {
+#nav-list .nav-link {
   color: #4e4e4e;
   font-size: 1rem;
   font-weight: 600;
 }
 
-#navbarNavDropdown #nav-list .nav-link:hover{
+#nav-list .nav-link:hover{
   color: #0078ff;
 }
 
-body:has(#header:target) #navbarNavDropdown #nav-list .nav-link[href="#header"],
-body:has(#about:target) #navbarNavDropdown #nav-list .nav-link[href="#about"],
-body:has(#services:target) #navbarNavDropdown #nav-list .nav-link[href="#services"],
-body:has(#statistics:target) #navbarNavDropdown #nav-list .nav-link[href="#statistics"],
-body:has(#blog:target) #navbarNavDropdown #nav-list .nav-link[href="#blog"],
-body:has(#contact:target) #navbarNavDropdown #nav-list .nav-link[href="#contact"]{
+#nav-list .nav-link.active{
+  position: relative;
   color: #0078ff;
 }
 
@@ -158,11 +154,9 @@ body:has(#contact:target) #navbarNavDropdown #nav-list .nav-link[href="#contact"
   color: #0078ff;
 }
 
-
-
 /* ^ Header style 
    ~ ----------------------------- */
-#header {
+#home {
   position: relative;
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
@@ -172,7 +166,7 @@ body:has(#contact:target) #navbarNavDropdown #nav-list .nav-link[href="#contact"
   background-size: cover;
 }
 
-.header-title {
+.home-title {
   font-size: 3rem;
   font-weight: 600;
 }
@@ -187,11 +181,11 @@ body:has(#contact:target) #navbarNavDropdown #nav-list .nav-link[href="#contact"
 /* ^ About Section style 
    ~ ----------------------------- */
 
-#about {
+#about{
   padding-block: 4rem;
 }
 
-#about .about-container {
+.about-container {
   padding: 4rem 1.25rem;
 }
 
@@ -241,7 +235,7 @@ body:has(#contact:target) #navbarNavDropdown #nav-list .nav-link[href="#contact"
   color: inherit;
 }
 
-.services-details .service-box h2 {
+.services-details .service-box h4 {
   font-size: 1.4rem;
   text-transform: uppercase;
   text-align: center;
@@ -269,7 +263,7 @@ body:has(#contact:target) #navbarNavDropdown #nav-list .nav-link[href="#contact"
   z-index: 99;
 }
 
-#statistics h6 {
+#statistics h5 {
   color: #fff;
   font-weight: normal;
 }
@@ -303,7 +297,7 @@ body:has(#contact:target) #navbarNavDropdown #nav-list .nav-link[href="#contact"
   padding: 2rem 0.875rem 1rem 1.1875rem;
 }
 
-.card-body h5 {
+.card-body h4 {
   color: #1e1e1e;
   font-size: 1.2rem;
 }

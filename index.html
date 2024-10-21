@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="description" content="Lorem">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DevFolio</title>
     <link rel="icon" href="images/bootstrap-fill.svg" type="image/x-icon" />
@@ -25,9 +26,12 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="media/media.css" />
   </head>
-  <body>
+  <body data-bs-spy="scroll" data-bs-target="#navbar-dev" data-bs-offset="66">
     <!-- The page navbar -->
-    <nav class="navbar navbar-mobile navbar-expand-lg fixed-top">
+    <nav
+      id="navbar-dev"
+      class="navbar navbar-expand-lg fixed-top"
+    >
       <div id="navbar-container" class="container">
         <a id="logo" class="navbar-brand text-white" href="#">DevFolio</a>
         <button
@@ -45,9 +49,9 @@
           class="collapse navbar-collapse justify-content-end"
           id="navbarNavDropdown"
         >
-          <ul id="nav-list" class="navbar-nav">
+          <ul id="nav-list" class="navbar-nav" role="tablist">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#header"
+              <a class="nav-link active" aria-current="page" href="#home"
                 >HOME</a
               >
             </li>
@@ -58,7 +62,7 @@
               <a class="nav-link" href="#services">SERVICES</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#statistics">WORK</a>
+              <a class="nav-link" href="#portfolio">WORK</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#blog">BLOG</a>
@@ -90,9 +94,9 @@
     </nav>
 
     <!-- The Header -->
-    <div id="header" class="d-flex align-items-center justify-content-center">
+    <header id="home" class="d-flex align-items-center justify-content-center">
       <div class="container text-center">
-        <h1 class="header-title text-white text-center mb-4">
+        <h1 class="home-title text-white text-center mb-4">
           I am Morgan Freeman
         </h1>
         <h2><span class="jop-title text-white auto-type"></span></h2>
@@ -107,15 +111,16 @@
           });
         </script>
       </div>
-    </div>
+    </header>
 
+    <main>
     <!-- !!About section -->
-    <div id="about">
+    <section id="about">
       <div class="container">
         <div class="about-container bg-white shadow-sm">
           <div class="row gy-5">
             <!-- Image, details and skills container -->
-            <div class="about-details-container row col-12 col-md-6">
+            <article class="about-details-container row col-12 col-md-6">
               <!-- Image and details container -->
               <div class="about-details row col-12 gy-4">
                 <div class="about-img col-12 col-sm-5 col-md-12 col-lg-5">
@@ -218,11 +223,11 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </article>
 
             <!-- Section Document -->
             <div class="about-doc col-12 col-md-6">
-              <h5 class="side-title mb-5">About me</h5>
+              <h3 class="side-title mb-5">About me</h3>
               <p class="lead">
                 Curabitur non nulla sit amet nisl tempus convallis quis ac
                 lectus. Curabitur arcu erat, accumsan id imperdiet et, porttitor
@@ -245,10 +250,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- !!Services Section -->
-    <div id="services" class="d-flex text-center pt-5">
+    <section id="services" class="d-flex text-center pt-5">
       <!-- Services container  -->
       <div class="container d-sm-flex flex-column">
         <!-- Section Title -->
@@ -257,9 +262,9 @@
           <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
         </div>
         <!-- Services Details containers -->
-        <div class="services-details row gx-5">
+        <article class="services-details row gx-5">
           <div class="col-md-4">
-            <div
+            <article
               class="service-box bg-white shadow-sm text-center d-flex flex-column align-items-center justify-content-center"
             >
               <div
@@ -271,16 +276,16 @@
                   ></i>
                 </div>
               </div>
-              <h2>WEB DESIGN</h2>
+              <h4>WEB DESIGN</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Consequatur molestiae repudiandae, exercitationem libero, modi
                 voluptates dolor aperiam iure earum, culpa reprehenderit error.
               </p>
-            </div>
+            </article>
           </div>
           <div class="col-md-4">
-            <div
+            <article
               class="service-box bg-white shadow-sm text-center d-flex flex-column align-items-center justify-content-center"
             >
               <div
@@ -290,17 +295,17 @@
                   class="bi bi-card-checklist service-icon d-flex align-items-center"
                 ></i>
               </div>
-              <h2>Web Development</h2>
+              <h4>Web Development</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Consequatur molestiae repudiandae, exercitationem libero, modi
                 voluptates dolor aperiam iure earum, culpa reprehenderit error.
               </p>
-            </div>
+            </article>
           </div>
 
           <div class="col-md-4">
-            <div
+            <article
               class="service-box bg-white shadow-sm text-center d-flex flex-column align-items-center justify-content-center"
             >
               <div
@@ -310,17 +315,17 @@
                   class="bi bi-bar-chart service-icon d-flex align-items-center"
                 ></i>
               </div>
-              <h2>Photography</h2>
+              <h4>Photography</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Consequatur molestiae repudiandae, exercitationem libero, modi
                 voluptates dolor aperiam iure earum, culpa reprehenderit error.
               </p>
-            </div>
+            </article>
           </div>
 
           <div class="col-md-4">
-            <div
+            <article
               class="service-box bg-white shadow-sm text-center d-flex flex-column align-items-center justify-content-center"
             >
               <div
@@ -330,17 +335,17 @@
                   class="bi bi-binoculars service-icon d-flex align-items-center"
                 ></i>
               </div>
-              <h2>Responsive Design</h2>
+              <h4>Responsive Design</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Consequatur molestiae repudiandae, exercitationem libero, modi
                 voluptates dolor aperiam iure earum, culpa reprehenderit error.
               </p>
-            </div>
+            </article>
           </div>
 
           <div class="col-md-4">
-            <div
+            <article
               class="service-box bg-white shadow-sm text-center d-flex flex-column align-items-center justify-content-center"
             >
               <div
@@ -350,17 +355,17 @@
                   class="bi bi-brightness-high service-icon d-flex align-items-center"
                 ></i>
               </div>
-              <h2>Graphic Design</h2>
+              <h4>Graphic Design</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Consequatur molestiae repudiandae, exercitationem libero, modi
                 voluptates dolor aperiam iure earum, culpa reprehenderit error.
               </p>
-            </div>
+            </article>
           </div>
 
           <div class="col-md-4">
-            <div
+            <article
               class="service-box bg-white shadow-sm text-center d-flex flex-column align-items-center justify-content-center"
             >
               <div
@@ -370,20 +375,20 @@
                   class="bi bi-calendar4-week service-icon d-flex align-items-center"
                 ></i>
               </div>
-              <h2>Marketing Services</h2>
+              <h4>Marketing Services</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Consequatur molestiae repudiandae, exercitationem libero, modi
                 voluptates dolor aperiam iure earum, culpa reprehenderit error.
               </p>
-            </div>
+            </article>
           </div>
-        </div>
+        </article>
       </div>
-    </div>
+    </section>
 
     <!-- !!The Statistics section -->
-    <div id="statistics" class="section">
+    <section id="statistics" class="section">
       <div class="container text-center">
         <div class="row justify-content-center align-items-center">
           <div class="first-statstic col-sm-3 pt-4">
@@ -391,35 +396,35 @@
               <i class="bi bi-check"></i>
             </div>
             <span class="statstic-num">450</span>
-            <h6>WORKS COMPLETED</h6>
+            <h5>WORKS COMPLETED</h5>
           </div>
           <div class="first-statstic col-sm-3 pt-4">
             <div class="circle-icon rounded-circle mb-4">
               <i class="bi bi-journal-richtext"></i>
             </div>
             <span class="statstic-num">25</span>
-            <h6>YEARS OF EXPERIENCE</h6>
+            <h5>YEARS OF EXPERIENCE</h5>
           </div>
           <div class="first-statstic col-sm-3 pt-4">
             <div class="circle-icon rounded-circle mb-4">
               <i class="bi bi-people"></i>
             </div>
             <span class="statstic-num">550</span>
-            <h6>TOTAL CLIENTS</h6>
+            <h5>TOTAL CLIENTS</h5>
           </div>
           <div class="first-statstic col-sm-3 pt-4">
             <div class="circle-icon rounded-circle mb-4">
               <i class="bi bi-award"></i>
             </div>
             <span class="statstic-num">48</span>
-            <h6>AWARD WON</h6>
+            <h5>AWARD WON</h5>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- !!Portfolio Section -->
-    <div id="portfolio">
+    <section id="portfolio">
       <div class="portfolio-container container">
         <!-- Section Title -->
         <div class="section-title text-center">
@@ -428,8 +433,8 @@
         </div>
         <div class="row row-cols-1 row-cols-md-3 g-5">
           <div class="col">
-            <div class="card border-0 rounded-0 shadow h-100">
-              <a href=""
+            <figure class="card border-0 rounded-0 shadow h-100">
+              <a href="#"
                 ><div class="card-img rounded-0">
                   <img
                     src="images/work-1.jpg"
@@ -440,22 +445,22 @@
               <div
                 class="card-body d-flex flex-column flex-sm-row justify-content-sm-between align-items-sm-center"
               >
-                <div class="card-body-text d-flex flex-column">
-                  <h5 class="card-title">Lorem impsum dolor</h5>
+                <figcaption class="card-body-text d-flex flex-column">
+                  <h4 class="card-title">Lorem impsum dolor</h4>
                   <p class="card-text">
                     Web Design <span>/ 18 Sep. 2018</span>
                   </p>
-                </div>
+                </figcaption>
                 <div class="add-icon d-flex justify-content-end">
-                  <a href="" class=""><i class="bi bi-plus-circle"></i></a>
+                  <a href="#home" class=""><i class="bi bi-plus-circle"></i></a>
                 </div>
               </div>
-            </div>
+            </figure>
           </div>
 
           <div class="col">
-            <div class="card border-0 rounded-0 shadow h-100">
-              <a
+            <figure class="card border-0 rounded-0 shadow h-100">
+              <a href="#"
                 ><div class="card-img rounded-0">
                   <img
                     src="images/work-2.jpg"
@@ -466,22 +471,22 @@
               <div
                 class="card-body d-flex flex-column flex-sm-row justify-content-sm-between align-items-sm-center"
               >
-                <div class="card-body-text d-flex flex-column">
-                  <h5 class="card-title">Loreda Cuno Nere</h5>
+                <figcaption class="card-body-text d-flex flex-column">
+                  <h4 class="card-title">Loreda Cuno Nere</h4>
                   <p class="card-text">
                     Web Design <span>/ 18 Sep. 2018</span>
                   </p>
-                </div>
+                </figcaption>
                 <div class="add-icon d-flex justify-content-end">
-                  <a href="" class=""><i class="bi bi-plus-circle"></i></a>
+                  <a href="#home"><i class="bi bi-plus-circle"></i></a>
                 </div>
               </div>
-            </div>
+            </figure>
           </div>
 
           <div class="col">
-            <div class="card border-0 rounded-0 shadow h-100">
-              <a
+            <figure class="card border-0 rounded-0 shadow h-100">
+              <a href="#"
                 ><div class="card-img rounded-0">
                   <img
                     src="images/work-3.jpg"
@@ -492,22 +497,22 @@
               <div
                 class="card-body d-flex flex-column flex-sm-row justify-content-sm-between align-items-sm-center"
               >
-                <div class="card-body-text d-flex flex-column">
-                  <h5 class="card-title">Mavrito Lana Dere</h5>
+                <figcaption class="card-body-text d-flex flex-column">
+                  <h4 class="card-title">Mavrito Lana Dere</h4>
                   <p class="card-text">
                     Web Design <span>/ 18 Sep. 2018</span>
                   </p>
-                </div>
+                </figcaption>
                 <div class="add-icon d-flex justify-content-end">
-                  <a href="" class=""><i class="bi bi-plus-circle"></i></a>
+                  <a href="#home"><i class="bi bi-plus-circle"></i></a>
                 </div>
               </div>
-            </div>
+            </figure>
           </div>
 
           <div class="col">
-            <div class="card border-0 rounded-0 shadow h-100">
-              <a
+            <figure class="card border-0 rounded-0 shadow h-100">
+              <a href="#"
                 ><div class="card-img rounded-0">
                   <img
                     src="images/work-4.jpg"
@@ -518,22 +523,22 @@
               <div
                 class="card-body d-flex flex-column flex-sm-row justify-content-sm-between align-items-sm-center"
               >
-                <div class="card-body-text d-flex flex-column">
-                  <h5 class="card-title">Bindo Laro Cado</h5>
+                <figcaption class="card-body-text d-flex flex-column">
+                  <h4 class="card-title">Bindo Laro Cado</h4>
                   <p class="card-text">
                     Web Design <span>/ 18 Sep. 2018</span>
                   </p>
-                </div>
+                </figcaption>
                 <div class="add-icon d-flex justify-content-end">
-                  <a href="" class=""><i class="bi bi-plus-circle"></i></a>
+                  <a href="#home"><i class="bi bi-plus-circle"></i></a>
                 </div>
               </div>
-            </div>
+            </figure>
           </div>
 
           <div class="col">
-            <div class="card border-0 rounded-0 shadow h-100">
-              <a
+            <figure class="card border-0 rounded-0 shadow h-100">
+              <a href="#"
                 ><div class="card-img rounded-0">
                   <img
                     src="images/work-5.jpg"
@@ -544,22 +549,22 @@
               <div
                 class="card-body d-flex flex-column flex-sm-row justify-content-sm-between align-items-sm-center"
               >
-                <div class="card-body-text d-flex flex-column">
-                  <h5 class="card-title">Studio Lena Mado</h5>
+                <figcaption class="card-body-text d-flex flex-column">
+                  <h4 class="card-title">Studio Lena Mado</h4>
                   <p class="card-text">
                     Web Design <span>/ 18 Sep. 2018</span>
                   </p>
-                </div>
+                </figcaption>
                 <div class="add-icon d-flex justify-content-end">
-                  <a href="" class=""><i class="bi bi-plus-circle"></i></a>
+                  <a href="#home"><i class="bi bi-plus-circle"></i></a>
                 </div>
               </div>
-            </div>
+            </figure>
           </div>
 
           <div class="col">
-            <div class="card border-0 rounded-0 shadow h-100">
-              <a
+            <figure class="card border-0 rounded-0 shadow h-100">
+              <a href="#"
                 ><div class="card-img rounded-0">
                   <img
                     src="images/work-6.jpg"
@@ -570,24 +575,24 @@
               <div
                 class="card-body d-flex flex-column flex-sm-row justify-content-sm-between align-items-sm-center"
               >
-                <div class="card-body-text d-flex flex-column">
-                  <h5 class="card-title">Studio Big Bang</h5>
+                <figcaption class="card-body-text d-flex flex-column">
+                  <h4 class="card-title">Studio Big Bang</h4>
                   <p class="card-text">
                     Web Design <span>/ 18 Sep. 2018</span>
                   </p>
-                </div>
+                </figcaption>
                 <div class="add-icon d-flex justify-content-end">
-                  <a href="" class=""><i class="bi bi-plus-circle"></i></a>
+                  <a href="#home"><i class="bi bi-plus-circle"></i></a>
                 </div>
               </div>
-            </div>
+            </figure>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- !! Feedback Section -->
-    <div id="feedback" class="section">
+    <section id="feedback" class="section">
       <div class="container d-felx justify-content-center align-items-center">
         <div id="carouselExampleCaptions" class="carousel slide">
           <div class="carousel-indicators">
@@ -635,11 +640,11 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- !! Blog Section -->
-    <div id="blog">
-      <div class="container">
+    <section id="blog">
+      <article class="container">
         <!-- Section Title -->
         <div class="section-title text-center">
           <h3>Blog</h3>
@@ -647,7 +652,7 @@
         </div>
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
-            <div class="card h-100 rounded-0 rounded-bottom-3">
+            <article class="card h-100 rounded-0 rounded-bottom-3">
               <div class="blog-img blog-img-1">
                 <img
                   src="images/post-1.jpg"
@@ -656,9 +661,9 @@
                 />
               </div>
               <div class="card-body mt-2">
-                <h5 class="card-title">
+                <h4 class="card-title">
                   <a href="">See more ideas about Travel</a>
-                </h5>
+                </h4>
                 <p class="card-text">
                   Proin eget tortor risus. Pellentesque in ipsum id orci porta
                   dapibus. Praesent sapien massa, convallis a pellentesque nec,
@@ -684,10 +689,10 @@
                   ><span class="ms-1">min</span>
                 </div>
               </div>
-            </div>
+            </article>
           </div>
           <div class="col">
-            <div class="card h-100 rounded-0 rounded-bottom-3">
+            <article class="card h-100 rounded-0 rounded-bottom-3">
               <div class="blog-img blog-img-2">
                 <img
                   src="images/post-2.jpg"
@@ -696,9 +701,9 @@
                 />
               </div>
               <div class="card-body mt-2">
-                <h5 class="card-title">
+                <h4 class="card-title">
                   <a href="">See more ideas about Travel</a>
-                </h5>
+                </h4>
                 <p class="card-text">
                   Proin eget tortor risus. Pellentesque in ipsum id orci porta
                   dapibus. Praesent sapien massa, convallis a pellentesque nec,
@@ -724,11 +729,11 @@
                   ><span class="ms-1">min</span>
                 </div>
               </div>
-            </div>
+            </article>
           </div>
 
           <div class="col">
-            <div class="card h-100 rounded-0 rounded-bottom-3">
+            <article class="card h-100 rounded-0 rounded-bottom-3">
               <div class="blog-img blog-img-3">
                 <img
                   src="images/post-3.jpg"
@@ -737,9 +742,9 @@
                 />
               </div>
               <div class="card-body mt-2">
-                <h5 class="card-title">
+                <h4 class="card-title">
                   <a href="">See more ideas about Travel</a>
-                </h5>
+                </h4>
                 <p class="card-text">
                   Proin eget tortor risus. Pellentesque in ipsum id orci porta
                   dapibus. Praesent sapien massa, convallis a pellentesque nec,
@@ -765,18 +770,18 @@
                   ><span class="ms-1">min</span>
                 </div>
               </div>
-            </div>
+            </article>
           </div>
         </div>
-      </div>
-    </div>
+      </article>
+    </section>
 
     <!-- !! Contact Section -->
-    <div id="contact" class="section">
+    <section id="contact" class="section">
       <div class="container">
         <div class="row gx-md-4 position-relative z-3 bg-white">
           <div class="form col-12 col-md-6">
-            <h5 class="side-title mb-5 p-0">Send Message Us</h5>
+            <h3 class="side-title mb-5 p-0">Send Message Us</h3>
             <form action="">
               <div class="mb-3">
                 <input
@@ -817,7 +822,7 @@
           </div>
 
           <div class="intouch col-12 col-md-6">
-            <h5 class="side-title mb-5 mt-4 mt-md-0 p-0">Get in touch</h5>
+            <h3 class="side-title mb-5 mt-4 mt-md-0 p-0">Get in touch</h3>
             <p class="lead">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
               dolorum dolorem soluta quidem expedita aperiam aliquid at. Totam
@@ -865,10 +870,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- !! Footer Section -->
-    <div id="footer">
+    <section id="footer">
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
@@ -880,7 +885,8 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
+  </main>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
