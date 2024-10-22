@@ -464,6 +464,10 @@ li{
   color: #0078ff;
 }
 
+#blog article span:hover{
+  color: #0078ff;
+}
+
 /* ^ Contact Section style 
    ~ ----------------------------- */
 #contact {
