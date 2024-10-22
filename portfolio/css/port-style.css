@@ -5,17 +5,23 @@
 body {
   background-color: #f5f5f5;
   color: #4e4e4e;
+  line-height: 1.5;
 }
 
 a {
   text-decoration: none;
 }
 
-#portfolio-home {
+.navbar {
+  background: rgba(0, 0, 0, 0.3);
+  padding-block: 12px;
+}
+
+#sub-page {
   height: 350px;
 }
 
-#portfolio-home {
+#sub-page {
   position: relative;
   background-image: url(../../images/overlay-bg.jpg);
   background-position: center center;
@@ -24,7 +30,7 @@ a {
   padding: 8rem 0;
 }
 
-#portfolio-home:after {
+#sub-page:after {
   content: "";
   position: absolute;
   top: 0;
@@ -35,18 +41,18 @@ a {
   opacity: 0.7;
 }
 
-#portfolio-home .container {
+#sub-page .container {
   position: relative;
   z-index: 99;
 }
 
-#portfolio-home h1 {
+#sub-page h1 {
   font-size: 3rem;
   text-transform: uppercase;
   margin-bottom: 1.5rem;
 }
 
-#portfolio-home p {
+#sub-page p {
   color: #cde1f8;
 }
 

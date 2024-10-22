@@ -27,6 +27,11 @@ a:visited {
   color: inherit;
 }
 
+ul,
+li{
+  list-style: none;
+}
+
 .section {
   position: relative;
   background-image: url(../images/overlay-bg.jpg);
